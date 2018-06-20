@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Quiz 4-6</title>
+		<style type = "text/css">
+			h1 {position: relative;
+						  left: 50px;
+						  font-size: 20px;}
+		</style>
+		
+	</head>
+	<body>
+		<h1>Harlan Chang</h1>
+		
+		<img id = "myImage" src = "https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg" alt = "dog">
+		
+		<ol>Favorite Things:
+			<li id = 'firstfav'>Dogs</li>
+			<li id = 'secondfav'>Cats</li>
+		</ol>
+		
+		<p>
+		Enter First Favorite
+		<button onclick = "firstFunction()">Enter a First Favorite</button>
+		<br>
+		
+		Enter Second Favorite 
+		<button onclick = "secondFunction()">Enter a Second Favorite</button>
+		<br>
+		
+		Do you like Google? 
+		<button onclick = "document.getElementById('myImage').src = 'https://storage.googleapis.com/gweb-uniblog-publish-prod/static/blog/images/google-200x200.7714256da16f.png'"> Yes </button>
+		<button onclick = "document.getElementById('myImage').src = 'https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg'"> No</button>
+		</p>
+		
+		<script>
+		function firstFunction()
+		{
+			var myinput;
+			myinput = window.prompt("Enter your favorite thing");
+			document.getElementById('firstfav').innerHTML = myinput;
+		}
+		
+		function secondFunction()
+		{
+			var myinput;
+			myinput = window.prompt("Enter your second favorite thing");
+			document.getElementById('secondfav').innerHTML = myinput;
+		}
+		
+		</script>
+	</body>
+</html>
